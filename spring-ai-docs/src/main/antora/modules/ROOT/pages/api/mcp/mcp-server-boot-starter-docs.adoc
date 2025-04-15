@@ -279,7 +279,7 @@ spring:
 public class WeatherService {
 
     @Tool(description = "Get weather information by city name")
-    public String getWeather(String cityName) {
+    public String getWeather(@ToolParam(description = "cityName") String cityName) {
         // Implementation
     }
 }
